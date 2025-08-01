@@ -200,13 +200,13 @@ function generateCodes() {
     }
   
     // Проверка на полибоксы (F3, F4, F5)
-    if (inputText.startsWith("F3") || inputText.startsWith("F4") || inputText.startsWith("F5")) {
-      let qrCodeDiv = document.getElementById("qr-code");
-      qrCodeDiv.innerHTML = "";
-      qrCodeDiv.classList.add("notAlowedPolybox");
-      qrCodeDiv.innerHTML = `<h1 class="notAlowedPolybox-text">Генерация этикеток полибоксов запрещена!</h1>`;
-      return;
-    }
+    // if (inputText.startsWith("F3") || inputText.startsWith("F4") || inputText.startsWith("F5")) {
+    //   let qrCodeDiv = document.getElementById("qr-code");
+    //   qrCodeDiv.innerHTML = "";
+    //   qrCodeDiv.classList.add("notAlowedPolybox");
+    //   qrCodeDiv.innerHTML = `<h1 class="notAlowedPolybox-text">Генерация этикеток полибоксов запрещена!</h1>`;
+    //   return;
+    // }
   
     // Основной случай
     const qrText = inputText;
